@@ -171,17 +171,11 @@ Create a build of a React project which uses Inferno or Preact as the runtime vi
 
 ### Zero Configuration Setup
 
-- Write JavaScript with ES2015-ES2017 features and JSX, transpiled down to ES5.
-- Use new JavaScript features at Stage 2 and above in the TC39 process:
-  - [`async`/`await` syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function), for writing async code in a synchronous way.
-  - Class properties, for avoiding boilerplate when writing ES2015 classes.
+- Write JavaScript with modern features and JSX, transpiled down to ES5.
+- Use new JavaScript feature proposals in the TC39 process:
+  - Class properties, for avoiding boilerplate when writing classes.
   - Decorators.
-  - [Object rest/spread](https://github.com/sebmarkbage/ecmascript-rest-spread#object-restspread-properties-for-ecmascript), for shallow cloning, merging and partially destructuring objects as syntax.
-
-- Use experimental JavaScript feature proposals which are at Stages 0 and 1 in the TC39 process:
-  - [export extensions](http://babeljs.io/docs/plugins/transform-export-extensions/#example)
-  - [`do` expressions](http://babeljs.io/docs/plugins/transform-do-expressions/#detail)
-  - [`::` function binding operator](http://babeljs.io/docs/plugins/transform-function-bind/#detail)
+  - Export extensions.
 
 - Polyfills for `Promise`,  `fetch()` and `Object.assign()`, which can be disabled with a `--no-polyfill` flag if you don’t need them or want to provide your own.
 - Import images and stylesheets into JavaScript like any other module, to be handled by Webpack as part of its build.
